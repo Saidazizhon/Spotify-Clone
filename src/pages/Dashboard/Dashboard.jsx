@@ -12,9 +12,9 @@ function Dashboard({code}) {
       setToken(accessToken)
     },[accessToken])
   return (
-    <div className='flex justify-between '>
+    <div className='flex justify-between'>
       <Navbar/>
-      <div className="w-[60%] overflow-y-auto h-[100vh] login-bg">
+      <div className="w-[60%] relative overflow-y-auto h-[100vh] login-bg">
         <CustomRoutes  />
 
       </div>
