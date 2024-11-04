@@ -6,7 +6,6 @@ function useAuth(code) {
     useEffect(() => {
         useAxios().post("/login", {code}).then(res => {
             setAccessToken(res.data.accessToken);
-            // console.log(res.data.accessToken);
             window.history.pushState({}, null, "/")
         })
         .catch(err => window.location = "/")

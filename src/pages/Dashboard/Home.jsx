@@ -18,7 +18,7 @@ function Home() {
 
   useEffect(() => {
     if(token){
-      spotifyApi.searchTracks("Sherali Jo'rayev ").then(res => {
+      spotifyApi.searchTracks("PDD").then(res => {
         setTracksList(res.body.tracks.items.map(item => {
           const data ={
             id:item.id,
